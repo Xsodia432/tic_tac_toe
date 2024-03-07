@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item:hover {
+  background-color: #807171;
+  transition: 0.5s;
+}
