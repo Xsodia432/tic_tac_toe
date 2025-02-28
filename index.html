@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./tic_tac_toe.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
   </head>
-  <body class="bg-slate-900">
-    <div class="flex justify-center">
-      <div>
-        <p class="text-center font-bold text-white mt-5 text-5xl">
-          TIC TAC TOE
-        </p>
-        <div class="mt-24">
-          <div class="flex justify-between text-white font-bold text-xl">
-            <p class="mb-5" id="X">Player 1</p>
-            <p class="mb-5"></p>
-            <p class="mb-5" id="O">Player 1</p>
-          </div>
-          <div id="container" class="grid grid-cols-3 text-center"></div>
-          <p
-            class="text-center font-bold text-white mt-5 text-2xl"
-            id="game_status"
-          ></p>
-        </div>
-      </div>
+  <body>
+    <button id="start-game" class="start-game">START GAME</button>
+    <div class="main-content" id="main-content">
+      <div id="player-container"></div>
+      <br />
+      <div class="board-container" id="board-container"></div>
+
+      <div><button id="reset-game">Reset Game</button></div>
     </div>
   </body>
 </html>
-<script src="./tic_tac_toe.js"></script>
